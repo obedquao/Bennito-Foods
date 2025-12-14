@@ -1,0 +1,22 @@
+:root {
+  --orange: #FF7F11;
+  --green: #2ECC71;
+  --white: #FFFFFF;
+  --black: #1C1C1C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+  background: var(--white);
+}
