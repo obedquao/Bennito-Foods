@@ -51,7 +51,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}>
-           Customized meals, corporate catering, personal orders, and food projects – we bring taste to your table.</motion.p>
+           Customized Meals, Corporate Catering, Personal Orders, and Food Projects – We Bring Taste To Your Table.</motion.p>
         <motion.button  className="btn-join" onClick={() => {
                      document
                         .getElementById("contact")
