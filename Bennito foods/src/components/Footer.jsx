@@ -4,7 +4,6 @@ import "../styles/footer.css";
 export default function Footer() {
   return (
     <footer className="footer">
-
       <motion.div
         className="footer-content"
         initial={{ opacity: 0, y: 30 }}
@@ -12,7 +11,6 @@ export default function Footer() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-
         {/* BRAND */}
         <div className="footer-brand">
           <h3>Bennito Foods & Bakery</h3>
@@ -28,21 +26,28 @@ export default function Footer() {
 
         {/* SOCIALS */}
         <div className="followus">
-            <h4>Follow Us</h4>
-        <div className="footer-socials">
-          <a href="#" aria-label="Facebook">
-            <img src="/icons/facebook.png" alt="Facebook" />
-          </a>
-          <a href="#" aria-label="Instagram">
-            <img src="/icons/instagram.png" alt="Instagram" />
-          </a>
-          <a href="#" aria-label="WhatsApp">
-            <img src="/icons/whatsapp.png" alt="WhatsApp" />
-          </a>
+          <h4>Follow Us</h4>
+          <div className="footer-socials">
+            <a
+              href="https://www.facebook.com/share/1BWtoiYUdE/"
+              aria-label="Facebook"
+            >
+              <img src="/icons/facebook.png" alt="Facebook" />
+            </a>
+            <a
+              href="https://www.instagram.com/bennitofoods?utm_source=qr&igsh=MXJhMXBoZXExc3Jw"
+              aria-label="Instagram"
+            >
+              <img src="/icons/instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://wa.link/zvckoy" aria-label="WhatsApp">
+              <img src="/icons/whatsapp.png" alt="WhatsApp" />
+            </a>
+            <a href="http://tiktok.com/@bennitofoods" aria-label="Tiktok">
+              <img src="/icons/tiktok.png" alt="Tiktok" />
+            </a>
+          </div>
         </div>
-        </div>
-        
-
       </motion.div>
 
       {/* COPYRIGHT */}
@@ -55,7 +60,6 @@ export default function Footer() {
       >
         © 2025 Bennito Foods & Bakery. All rights reserved.
       </motion.div>
-
     </footer>
   );
 }
