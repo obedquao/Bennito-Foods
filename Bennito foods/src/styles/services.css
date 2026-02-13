@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 .services {
   background: #fafafa;
   text-align: center;
@@ -12,7 +14,7 @@
 
 /* GRID — ALWAYS 3 PER ROW (DESKTOP) */
 .services-grid {
-   display: flex;
+  display: flex;
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
@@ -21,33 +23,48 @@
 
 /* CARD */
 .service-card {
- background: white;
-  text-align: left;
+  background: white;
+  overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 370px;
-  height: 189px;
-  padding-top: 30px;
-  padding-left: 20px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 440px;
 }
 
 /* ICON */
+
 .service-icon {
-  width: 32px;
-  height: 32px;
   margin-bottom: 20px;
+  object-fit: cover;
+  width: 100%;
+  height: 60%;
 }
 
 /* TEXT */
+.service-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 12px;
+  padding: 8px 20px 20px 20px;
+}
 .service-card h3 {
-  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
   color: var(--orange);
   margin-bottom: 14px;
+  padding: 0 20px;
 }
 
 .service-card p {
-  font-size: 12px;
+  padding: 0 20px;
+  font-size: 16px;
   line-height: 1.7;
   color: #555;
 }

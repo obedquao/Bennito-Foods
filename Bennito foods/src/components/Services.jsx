@@ -6,38 +6,37 @@ export default function Services() {
     {
       title: "Customized Lunch Menu for Corporate Organizations",
       desc: "Tailored meals designed to fuel productivity and delight employees.",
-      icon: "/icons/people.png"
+      icon: "/images/corporatemenu.webp",
     },
     {
       title: "Food Catering for Conference Meetings",
       desc: "Professional catering that keeps your meetings running smoothly.",
-      icon: "/icons/conference.png"
+      icon: "/images/conference.webp",
     },
     {
       title: "Large Food Orders",
       desc: "Bulk orders delivered with freshness and precision.",
-      icon: "/icons/fruit.png"
+      icon: "/images/large.webp",
     },
     {
       title: "Buffet Setup for Corporate Functions",
       desc: "Elegant buffet arrangements to impress your guests.",
-      icon: "/icons/buffet.png"
+      icon: "/images/buffet.webp",
     },
     {
       title: "Food Projects in Rural and Urban Areas",
       desc: "Community-focused initiatives bringing nourishment to all.",
-      icon: "/icons/house.png",
+      icon: "/images/rural.webp",
     },
     {
       title: "Personal Food Orders",
       desc: "Special meals prepared just for you, on demand.",
-      icon: "/icons/user.png",
+      icon: "/images/personal.webp",
     },
   ];
 
   return (
     <section id="services" className="services">
-
       {/* SECTION TITLE */}
       <motion.h2
         className="section-title"
@@ -64,17 +63,15 @@ export default function Services() {
             }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <img
-              src={service.icon}
-              alt=""
-              className="service-icon"
-            />
-            <h3>{service.title}</h3>
-            <p>{service.desc}</p>
+            <img src={service.icon} alt="" className="service-icon" />
+
+            <div className="service-info">
+              <h3>{service.title}</h3>
+              <p>{service.desc}</p>
+            </div>
           </motion.div>
         ))}
       </div>
-
     </section>
   );
 }
